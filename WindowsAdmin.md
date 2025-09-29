@@ -19,6 +19,10 @@ Can be enabled through Settings -> Apps & Features -> Optional Features -> RSAT:
 Enterprise updates can be affected in Group Policy Management in Computer configuration -> policies -> administrative templates-> Windows components -> Windows Update
 You can save a lot of bandwidth setting up a WSUS server, or a server that hosts windows updates for your enterprise. In the above group policy, you can find "Specify Intranet Microsoft Update Service Location", put in the wsus server url in the options (will need a port number in the URL), and specify the Statistics server (can be the same server).
 
+##PowerShell
+ISE is beginner friendly and shows cmdlets that you can use to help you get used to PS7. The file format for PowerShell scripts  are .ps1 files.  
+Devices inately restrict using Powershell scripts, so you will have to unrestrict before executing, then restrict it again after you are finished executing the script(s) by using "Set-ExecutionPolicy Unrestricted"
+
 ## Command Line Rosetta Stone
 
 | Language | help | dir | tasks | kill | read file | search | network info |
